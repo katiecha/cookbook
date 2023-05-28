@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 body {
-    font-family: "Spline Sans", sans-serif;
-    color: #777;
+    font-family: monospace;
+    color: black;
     line-height: 1.7;
+    background-color: #1a4c35;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -12,36 +13,207 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 a {
-    color: #222;
+    color: white;
     text-decoration: none;
     transition: all 0.4s;
     font-weight: 600;
 }
 
 a:hover {
-    color: #1a4c35;
+    color: #389469;
 }
 
 img {
     min-width: 100%;
 }
 
-/* Btn */
-.btn {
-    border-radius: 0;
-    padding: 14px 38px;
-}
-
-.btn-brand {
-    color: white;
-    font-weight: 500;
-    border-color: #1a4c35;
+/* Navbar section */
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
     background-color: #1a4c35;
+    color: white;
+    font-family: 'Playfair Display', serif;
 }
 
-.btn-brand:hover {
-    border-color: #389469;
-    background-color: #389469;
-    color: white;
+.logo {
+    font-size: 2rem;
+    margin: 1rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
 
+.logo li a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo li a:hover {
+    color: #389469;
+}
+
+.nav-links {
+    font-size: 1.5rem;
+    height: 100%;
+}
+
+.nav-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.nav-links li a:hover {
+    color: #389469;
+}
+
+/* Toggle button */
+.toggle-button {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .toggle-button {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li{
+        text-align: center;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .nav-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* Cards */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #1a4c35;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+.card_image {
+  height: calc(13*1.2rem);
+  padding: 1.2rem 1.2rem 0;
+  position:relative;
+}
+.card_image:before,
+.card_image:after{
+  content: "";
+  position: absolute;
+  width: 20px;
+  left: 60%;
+  top: 0;
+  height: 45px;
+  background: #e6e6e6b8;
+  transform: rotate(45deg);
+}
+.card_image:after{
+  transform: rotate(-45deg);
+  top:auto;
+  bottom:-22px;
+  left:40%;
+}
+.card_image img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.cards_item {
+  filter:drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-left: 30px;
+  background: repeating-linear-gradient(#0000 0 calc(1.2rem - 1px),#66afe1 0 1.2rem) right bottom /100% 100%,linear-gradient(red 0 0) 30px 0/2px 100% #fff;
+  background-repeat: no-repeat;
+  line-height: 1.2rem;
+  -webkit-mask:radial-gradient(circle .8rem at 2px 50%,#0000 98%,#000)0 0/100% 2.4rem;
+}
+
+.card_content {
+  padding: 1.2rem;
+}
+
+h2.card_title,p {
+  margin: 1.2rem 0;
+}
+h2.card_title {
+    font-size: 1.3em;
 }
