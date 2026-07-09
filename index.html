@@ -3,7 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <meta name="description" content="A Cookbook — explore classic Korean recipes including Bibimbap, Bulgogi, and Pajeon.">
+    <title>A Cookbook</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍜</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preload" as="image" href="assets/images/Bibimbap.jpg">
@@ -13,18 +18,18 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
       <div class="logo">
-              <a href="index.html">A Cookbook</a>
+        <a href="index.html">A Cookbook</a>
       </div>
       <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </a>
       <div class="nav-links">
-          <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-          </ul>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
       </div>
     </nav>
 
@@ -32,12 +37,12 @@
       <ul class="cards">
         <li class="cards_item">
           <div class="card">
-            <div class="card_image"><img src="assets/images/Bibimbap.jpg" alt="Bibimbap Korean rice bowl" width="1200" height="1200" decoding="async" fetchpriority="high"></div>
+            <div class="card_image"><img src="assets/images/Bibimbap.jpg" alt="Bibimbap Korean rice bowl topped with vegetables and egg" width="1200" height="1200" decoding="async" fetchpriority="high"></div>
             <div class="card_content">
-              <h2 class="card_title">Farmstand Salad &#x2022; $9</h2>
+              <h2 class="card_title">Bibimbap &#x2022; $14</h2>
               <div class="card_text">
-                <p>Dig into the freshest veggies of the season! This salad-in-a-jar features a mixture of leafy greens and seasonal vegetables, fresh from the farmer's market.</p>
-                <p>Served with your choice of dressing on the side: housemade ranch, cherry balsamic vinaigrette, creamy chipotle, avocado green goddess, or honey mustard. Add your choice of protein for $2 more. </p>
+                <p>A beloved Korean classic meaning "mixed rice." A warm bowl of steamed rice is topped with an array of seasoned vegetables, a perfectly fried egg, and a drizzle of gochujang chili paste.</p>
+                <p>Served in a sizzling stone bowl (dolsot) so the rice crisps at the bottom. Choose your protein: bulgogi beef, spicy pork, tofu, or mushroom. Mix it all together before the first bite!</p>
               </div>
             </div>
           </div>
@@ -45,29 +50,26 @@
 
         <li class="cards_item">
           <div class="card">
-            <div class="card_image"><img src="assets/images/Bulgogi-Korean-food.jpg" alt="Bulgogi Korean grilled beef" width="1200" height="900" decoding="async" loading="lazy"></div>
+            <div class="card_image"><img src="assets/images/Bulgogi-Korean-food.jpg" alt="Bulgogi Korean marinated grilled beef" width="1200" height="900" decoding="async" loading="lazy"></div>
             <div class="card_content">
-              <h2 class="card_title">Ultimate Reuben &#x2022; $18</h2>
+              <h2 class="card_title">Bulgogi &#x2022; $18</h2>
               <div class="card_text">
-                <p>All great meals take time, but this one takes it to the next level! More than 650 hours of fermenting, brining, aging, and curing goes into each and every one of our legendary Reuben sandwiches.
-                </p>
-                <p>Every element of this extraordinary sandwich is handcrafted in our kitchens, from the rye bread baked from our secret recipe to the cave-aged Swiss cheese, right down to the pickle. The only thing we didn't make on the premises is the toothpick ( but we're looking into how to do that). </p>
-                <p>This unforgettable sandwich has all of the classic Reuben elements: corned beef, rye bread, creamy Russian dressing, sauerkraut, plus a sweet gherkin pickle. No substitions please!
-                <p>
-                  <p>Add a side of french fries or sweet potato fries for $2 more, or our housemade pub chips for $1.</p>
+                <p>Thinly sliced beef marinated for 24 hours in a blend of soy sauce, Asian pear, garlic, ginger, and sesame oil, then grilled over high heat for a caramelized char.</p>
+                <p>Bulgogi — literally "fire meat" — is one of Korea's most iconic dishes. Served with steamed rice, banchan side dishes, and crisp lettuce leaves for wrapping.</p>
               </div>
             </div>
           </div>
         </li>
+
         <li class="cards_item">
           <div class="card">
-            <div class="card_image"><img src="assets/images/Korean-Pancakes-Pajeon.jpg" alt="Korean pancakes Pajeon" width="1200" height="800" decoding="async" loading="lazy"></div>
+            <div class="card_image"><img src="assets/images/Korean-Pancakes-Pajeon.jpg" alt="Korean savory scallion pancakes Pajeon" width="1200" height="800" decoding="async" loading="lazy"></div>
             <div class="card_content">
-              <h2 class="card_title">Fig &amp; Berry Plate &#x2022; $16</h2>
+              <h2 class="card_title">Pajeon &#x2022; $12</h2>
               <div class="card_text">
-                <p><span class="note">Seasonal.</span></p>
-                <p>A succulent sextet of fresh figs join with a selection of bodacious seasonal berries in this refreshing, shareable dessert.</p>
-                <p>Choose your drizzle: cherry-balsamic vinegar, local honey, or housemade chocolate sauce. </p>
+                <p><span class="note">Great for sharing.</span></p>
+                <p>Crispy Korean savory pancakes packed with fresh scallions and your choice of add-ins: seafood (shrimp &amp; squid), kimchi, or mushroom &amp; zucchini.</p>
+                <p>Served golden-brown and sliced, alongside a housemade soy-vinegar dipping sauce. The ideal starter or side for any Korean meal.</p>
               </div>
             </div>
           </div>
@@ -75,7 +77,6 @@
       </ul>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </body>
 </html>
