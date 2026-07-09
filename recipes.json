@@ -1,0 +1,50 @@
+[
+  {
+    "id": "bibimbap",
+    "title": "Bibimbap",
+    "price": 14,
+    "image": {
+      "src": "assets/images/Bibimbap.jpg",
+      "alt": "Bibimbap Korean rice bowl topped with vegetables and egg",
+      "width": 1200,
+      "height": 1200
+    },
+    "note": null,
+    "description": [
+      "A beloved Korean classic meaning \"mixed rice.\" A warm bowl of steamed rice is topped with an array of seasoned vegetables, a perfectly fried egg, and a drizzle of gochujang chili paste.",
+      "Served in a sizzling stone bowl (dolsot) so the rice crisps at the bottom. Choose your protein: bulgogi beef, spicy pork, tofu, or mushroom. Mix it all together before the first bite!"
+    ]
+  },
+  {
+    "id": "bulgogi",
+    "title": "Bulgogi",
+    "price": 18,
+    "image": {
+      "src": "assets/images/Bulgogi-Korean-food.jpg",
+      "alt": "Bulgogi Korean marinated grilled beef",
+      "width": 1200,
+      "height": 900
+    },
+    "note": null,
+    "description": [
+      "Thinly sliced beef marinated for 24 hours in a blend of soy sauce, Asian pear, garlic, ginger, and sesame oil, then grilled over high heat for a caramelized char.",
+      "Bulgogi — literally \"fire meat\" — is one of Korea's most iconic dishes. Served with steamed rice, banchan side dishes, and crisp lettuce leaves for wrapping."
+    ]
+  },
+  {
+    "id": "pajeon",
+    "title": "Pajeon",
+    "price": 12,
+    "image": {
+      "src": "assets/images/Korean-Pancakes-Pajeon.jpg",
+      "alt": "Korean savory scallion pancakes Pajeon",
+      "width": 1200,
+      "height": 800
+    },
+    "note": "Great for sharing.",
+    "description": [
+      "Crispy Korean savory pancakes packed with fresh scallions and your choice of add-ins: seafood (shrimp & squid), kimchi, or mushroom & zucchini.",
+      "Served golden-brown and sliced, alongside a housemade soy-vinegar dipping sauce. The ideal starter or side for any Korean meal."
+    ]
+  }
+]
