@@ -215,3 +215,34 @@ h2.card_title,p {
 h2.card_title {
     font-size: 1.3em;
 }
+
+.note {
+    font-style: italic;
+    color: #555;
+    font-size: 0.9em;
+}
+
+/* About page */
+.about-content {
+    padding: 2rem;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+.about-content h1 {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.about-content p {
+    color: white;
+    max-width: 65ch;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 2rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+}
